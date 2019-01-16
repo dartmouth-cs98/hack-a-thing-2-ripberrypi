@@ -32,3 +32,20 @@ BUT my grand vision was never realized! In fact, the Raspberry Pi is no longer a
 
 ## A superficial overview of what happened
 
+As I was wiring, my screen went black. I was so concentrated on making magic happen I didn't even realize. When I did, I thought something was wrong with my display, so I tried to SSH into my Pi, then getting stuck because I didn't know its IP address. 
+
+After putting on my #debuggingHat, I tried disconnecting the bread board, and the Pi turned on again!! I *should have* realized at this time that the circuit was the source of my problems. BUT, what I thought instead was "wow! It's back so I should try connecting everything again!" So I PUT BACK the bread board, shorting the Pi again, this time permanently killing my poor sweet Raspberry Pi.
+
+
+## A technical explanation of what happened
+
+Here is a picture of exactly where things went wrong:
+![ding ding ding](danger.jpg)
+Look at where the white wire is. To its right, on the Pi Wedge, is a 3.3V label, and its left end is (now correctly) connected to the positive row of the bread board. Out of IGNORANCE, I connected it to the negative row of the breadboard, effectively zapping the 3.3V back into the Raspberry Pi, KILLING it.
+
+
+## Takeaways
+
+I want to continue working with Raspberry Pis as this was SUPER fun, but the next time I do this, I WON'T KEEP THE BREAD BOARD CONNECTED!! And I'll try to actually understand what I'm wiring instead of going by intuition. 
+
+I'M SORRY FOR HURTING A POOR, INNOCENT RASPBERRY PI IN THIS PROCESS.
